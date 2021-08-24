@@ -1,0 +1,12 @@
+nav {
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    border: 1px solid gray;
+    padding: 1em;
+    cursor: pointer;
+}
+
+nav > span:hover {
+    color: red;
+}
