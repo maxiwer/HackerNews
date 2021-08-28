@@ -1,1 +1,8 @@
-<p>show works!</p>
+<div class="posts-wrapper">
+    <div *ngFor="let storyId of allStories | paginate: config">
+        <single-story [storyId]="storyId">
+        </single-story>
+    </div>
+
+    <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+</div>
