@@ -10,6 +10,10 @@ import { ShowComponent } from './show/show.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { AskComponent } from './ask/ask.component';
 import { AppRouting } from './app-routing';
+import { MainApi } from './shared/api/main.api';
+import { HttpClientModule } from '@angular/common/http';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { StoryComponent } from './story/story.component';
 
 @NgModule({
   declarations: [
@@ -19,15 +23,18 @@ import { AppRouting } from './app-routing';
     NewComponent,
     ShowComponent,
     JobsComponent,
-    AskComponent
+    AskComponent,
+    StoryComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule,
-    AppRouting
+    AppRouting,
+    HttpClientModule,
+    NgxPaginationModule,
   ],
   providers: [
-    
+    MainApi,
   ],
   bootstrap: [AppComponent]
 })
