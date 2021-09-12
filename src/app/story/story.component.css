@@ -5,8 +5,9 @@
     margin-top: 1.6rem;
 }
 
-p {
-    margin: 0;
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .story-wrapper {
@@ -21,4 +22,9 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
 }
