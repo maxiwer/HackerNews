@@ -17,6 +17,7 @@ export class StoryComponent implements OnInit {
   time = '';
   score = '';
   comments = '';
+  link = '';
 
   constructor(
     private mainApi: MainApi,
@@ -26,13 +27,14 @@ export class StoryComponent implements OnInit {
   ngOnInit(): void {
     this.mainApi.getStory(this.storyId).subscribe(
       story => {
-        // console.log(`~story: `, story);
+        console.log(`~story: `, story);
         // TODO: change getStory to JSON and change object to regex below
         this.storyTitle = story?.title;
         this.author = story?.by;
         this.time = formatDate(new Date(story?.time * 1000), 'dd/MM/yyyy, EEEE, HH:mm', 'en-US');
         this.score = story?.score; 
-        this.comments = story?.descendants; 
+        this.comments = story?.descendants;
+        this.link = story?.url;
       
         this.cd.markForCheck();
       }
