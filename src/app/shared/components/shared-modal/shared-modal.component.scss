@@ -1,0 +1,27 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .3);
+}
+
+.modal {
+  padding: 1rem;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, 0);
+  margin: auto;
+  width: 50%;
+}
+
+
+.btn {
+  border: 1px solid #aaaaaa;
+  &:hover {
+    cursor: pointer;
+  }
+}

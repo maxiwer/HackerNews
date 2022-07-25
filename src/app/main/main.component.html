@@ -1,4 +1,5 @@
 <div class="posts-wrapper">
+<!--  <app-shared-modal *ngIf="modal" (close)="modal = false"></app-shared-modal>-->
     <div class="" *ngFor="let storyId of allStories | paginate: config">
         <single-story [storyId]="storyId">
         </single-story>
