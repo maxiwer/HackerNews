@@ -14,6 +14,8 @@ import { MainApi } from './shared/api/main.api';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { StoryComponent } from './story/story.component';
+import { SharedModalComponent } from './shared/components/shared-modal/shared-modal.component';
+import {RefDirective} from "./shared/directives/ref.directive";
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { StoryComponent } from './story/story.component';
     JobsComponent,
     AskComponent,
     StoryComponent,
+    SharedModalComponent,
+    RefDirective
   ],
   imports: [
     BrowserModule,
@@ -36,6 +40,7 @@ import { StoryComponent } from './story/story.component';
   providers: [
     MainApi,
   ],
+  entryComponents: [SharedModalComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

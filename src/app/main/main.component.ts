@@ -15,6 +15,7 @@ export class MainComponent implements OnInit {
   };
   allStories: string[] = [];
   currentPosts: string[] = [];
+  modal = false;
 
   constructor(
     private mainApi: MainApi,

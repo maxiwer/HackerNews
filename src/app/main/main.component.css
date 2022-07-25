@@ -1,12 +1,19 @@
 .posts-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8em;
+  margin-top: 2em;
 }
 
 p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 0px;
 }
