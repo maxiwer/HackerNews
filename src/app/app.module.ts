@@ -18,29 +18,28 @@ import { SharedModalComponent } from './shared/components/shared-modal/shared-mo
 import {RefDirective} from "./shared/directives/ref.directive";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeadingComponent,
-    MainComponent,
-    NewComponent,
-    ShowComponent,
-    JobsComponent,
-    AskComponent,
-    StoryComponent,
-    SharedModalComponent,
-    RefDirective
-  ],
-  imports: [
-    BrowserModule,
-    RouterModule,
-    AppRouting,
-    HttpClientModule,
-    NgxPaginationModule,
-  ],
-  providers: [
-    MainApi,
-  ],
-  entryComponents: [SharedModalComponent],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeadingComponent,
+        MainComponent,
+        NewComponent,
+        ShowComponent,
+        JobsComponent,
+        AskComponent,
+        StoryComponent,
+        SharedModalComponent,
+        RefDirective
+    ],
+    imports: [
+        BrowserModule,
+        RouterModule,
+        AppRouting,
+        HttpClientModule,
+        NgxPaginationModule,
+    ],
+    providers: [
+        MainApi,
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
